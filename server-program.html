@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space explorer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-info.html">Personal information</a></li>
+            <li><a href="image-upload.html">My special photo</a></li>
+            <li><a href="form-method.html">Form method</a></li>
+            <li><a class="active" href="server-program.html">Choose secret program</a></li>
+            <li><a href="moving-text.html">About us</a></li>
+        </ul>
+         <form id="form-server-program" method="POST" action="page1.php" class="form container form-card col-md-7 col-sm-offset-4">
+            <fieldset>
+                <legend>What secret space training program would you like to run?</legend>
+                <div class="form-group">
+                    <label for="program-name">Type a name:</label>
+                    <div class="radio">
+                    <label><input type="radio"
+                                  id="program1"
+                                  name="server-action" 
+                                  value="page1.php" 
+                                  title="page1.php"
+                                  checked
+                                  >First training program</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" 
+                                      id="program2"
+                                      name="server-action" 
+                                      value="page2.php" 
+                                      title="page2.php">
+                                      Second training program</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" 
+                                      id="program3"
+                                      name="server-action" 
+                                      value="page3.php" 
+                                      title="page3.php">
+                                      Third training program</label>
+                    </div>
+                    <label>You have chosen: </label><label id="program-name">page1.php</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>

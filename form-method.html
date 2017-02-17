@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space explorer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="script.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-info.html">Personal information</a></li>
+            <li><a href="image-upload.html">My special photo</a></li>
+            <li><a class="active" href="form-method.html">Form method</a></li>
+            <li><a href="server-program.html">Choose secret program</a></li>
+            <li><a href="moving-text.html">About us</a></li>
+        </ul>
+        <form id="form-choose-method" action="chose-method.php" method="GET" class="form container form-card col-md-7 col-sm-offset-4">
+            <fieldset>
+                <legend>Form method:</legend>
+                <label>What would you like to send us?</label>
+                <div class="form-group">
+                    <label for="name">I think that...</label>
+                    <input type="text" class="form-control" name="opinion" id="opinion" placeholder="I'm cool">
+                </div>
+                <label>Choose a method for your form:</label>
+                <div class="radio">
+                    <label><input type="radio"
+                                  id="get"
+                                  name="method" 
+                                  value="GET" 
+                                  checked>GET</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" 
+                                  id="post"
+                                  name="method" 
+                                  value="POST">POST</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>
